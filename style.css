@@ -1,0 +1,114 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+    color: #000000;
+}
+
+h1, h2, h3 {
+    color: #343a40;
+}
+
+.css-1d391kg {
+    background-color: #007bff !important;
+    color: white !important;
+}
+
+.css-1d391kg a {
+    color: white !important;
+}
+
+/* DataFrame */
+.dataframe {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+/* Buttons */
+button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Metrics */
+.css-2trqyj {
+    background-color: #e9ecef !important;
+    color: #495057 !important;
+    border-radius: 10px;
+
+/* container visualisasi */
+}
+.plot-container>div {
+    box-shadow: 0 0 2px #070505;
+    padding: 5px;
+    border-color: #000000;
+}
+
+/* Container utama metric */
+div[data-testid="stMetricValue"] {
+    font-size: 40px;       
+    font-weight: bold;     
+    color: #000000;        
+}
+
+/* ini yang bagian dashboard  */
+/* Container utama untuk menampung kontainer-kontainer lainnya */
+.container {
+    display: flex; 
+    gap: 30px; 
+}
+
+/* Kontainer individu */
+[data-testid="metric-container"],
+.plot-container > div {
+    flex: 1; /* Agar setiap kontainer mengambil ruang yang sama */
+    box-shadow: 0 0 4px #686664;
+    padding: 10px;
+}
+
+div[data-testid="stExpander"] div[role="button"] p {
+    font-size: 1.2rem;
+    color: rgb(0, 0, 0);
+    border-color: #000000;
+    color-scheme: #000000;
+}
+
+.sidebar-content {
+    color: white;
+}
+
+[data-testid="stSidebar"] {
+    color: white;
+}
+
+div[data-testid="metric-container"] {
+        background-color: #f0f2f6;
+        border-radius: 10px;
+        padding: 10px;
+        text-align: center;
+        border: 1px solid #ccc;
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    div[data-testid="metric-container"] > label {
+        font-size: 14px;
+        font-weight: bold;
+        color: #333;
+    }
+
+    div[data-testid="metric-container"] > div {
+        font-size: 20px;
+        font-weight: bold;
+        color: #007bff;
+    }
+
+    
