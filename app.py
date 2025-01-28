@@ -16,15 +16,7 @@ st.set_page_config(
     initial_sidebar_state="expanded")
 
 # Fungsi untuk menghubungkan ke database PostgreQL
-def connect_db():
-    conn = psycopg2.connect(
-        dbname='callcenter', 
-        user='postgres', 
-        password='123456', 
-        host='localhost', 
-        port='5432'
-    )
-    return conn
+conn = st.connection("postgresql", type="sql")
 
 # Fungsi untuk mengambil data dari database berdasarkan query
 def fetch_data_from_db(query):
