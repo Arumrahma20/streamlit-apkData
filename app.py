@@ -22,6 +22,7 @@ def connect_db():
         password='123456', 
         host='localhost', 
         port='5432'
+        sslmode='require' 
     )
     return conn
 
