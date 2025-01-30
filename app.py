@@ -20,10 +20,13 @@ def connect_db():
         dbname='callcenter', 
         user='postgres', 
         password='123456',
-        host='localhost',
+        host='127.0.0.1',
         port='5432'
     )
     return conn
+    except Exception as e:
+        print(f"Error connecting to database: {e}")
+        return None
 
 # Fungsi untuk mengambil data dari database berdasarkan query
 def fetch_data_from_db(query):
