@@ -19,7 +19,8 @@ def connect_db():
     conn = psycopg2.connect(
         dbname='callcenter', 
         user='postgres', 
-        password='123456',  
+        password='123456',
+        host='localhost',
         port='5432'
     )
     return conn
