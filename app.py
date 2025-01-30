@@ -20,7 +20,7 @@ def connect_db():
         dbname='callcenter', 
         user='postgres', 
         password='123456',
-        host='127.0.0.1',
+        host='localhost',
         port='5432'
     )
     return conn
