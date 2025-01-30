@@ -24,9 +24,6 @@ def connect_db():
         port='5432'
     )
     return conn
-    except Exception as e:
-        print(f"Error connecting to database: {e}")
-        return None
 
 # Fungsi untuk mengambil data dari database berdasarkan query
 def fetch_data_from_db(query):
